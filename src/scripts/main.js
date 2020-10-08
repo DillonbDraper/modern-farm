@@ -1,3 +1,4 @@
+import { addPlant, usePlants } from "./field.js"
 import { createPlan } from "./plan.js"
 import { createAsparagus } from "./seeds/asparagus.js"
 import { createCorn } from "./seeds/corn.js"
@@ -15,6 +16,8 @@ const sunflower = createSunflower()
 const wheat = createWheat()
 const corn = createCorn()
 
-const cropArray = [bean, potato, asparagus, sunflower, wheat, corn]
+addPlant(corn)
 
-console.log(cropArray)
+const theField = usePlants();
+
+console.log(theField)
