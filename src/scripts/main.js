@@ -1,4 +1,5 @@
 import { addPlant, usePlants } from "./field.js"
+import { harvestPlants } from "./harvester.js"
 import { createPlan } from "./plan.js"
 import { createAsparagus } from "./seeds/asparagus.js"
 import { createCorn } from "./seeds/corn.js"
@@ -19,5 +20,7 @@ const corn = createCorn()
 
 plantSeeds(yearlyPlan)
 const theField = usePlants();
-
 console.log(theField)
+
+
+console.log(harvestPlants(theField))
