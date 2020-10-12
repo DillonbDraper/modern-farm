@@ -1,3 +1,4 @@
+import { Catalog } from "./catalog.js"
 import { addPlant, usePlants } from "./field.js"
 import { harvestPlants } from "./harvester.js"
 import { createPlan } from "./plan.js"
@@ -22,5 +23,10 @@ plantSeeds(yearlyPlan)
 const theField = usePlants();
 console.log(theField)
 
+const theHarvest = harvestPlants(theField)
 
-console.log(harvestPlants(theField))
+console.log(theHarvest)
+
+Catalog(theHarvest)
+
+
