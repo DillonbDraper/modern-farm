@@ -11,5 +11,10 @@ export const harvestPlants = (plants) => {
             }
         }
     }
+    harvest.sort((a, b) => {
+        let textA = a.type
+        let textB = b.type
+        return (textA < textB) ? - 1 : (textA > textB) ? 1 : 0;
+    })
     return harvest
 }
